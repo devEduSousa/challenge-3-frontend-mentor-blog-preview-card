@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Figtree";
+}
+
+body {
+    background-color: hsl(47, 88%, 63%);
+}
+
+.main-container {
+    width: 85%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    padding: 25px;
+    border-radius: 20px;
+    border: 1px solid hsl(0, 0%, 7%);
+    box-shadow: 10px 10px hsl(0, 0%, 7%);
+    height: auto;
+}
+
+.container .banner {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.container .publication-date span {
+    display: inline-block;
+    background-color: hsl(47, 88%, 63%);
+    padding: 6px 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.container .publication-date p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.container .publication a {
+    color: hsl(0, 0%, 7%);
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 20px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.container .publication p {
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+.container .user {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.container .user .avatar {
+    width: 40px;
+}
+
+footer { 
+    margin: 40px 0 20px;
+    font-size: 11px; 
+    text-align: center; 
+}
+
+footer a { 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}
+
+@media(min-width: 600px) {
+    .main-container {
+        width: 50%;
+    }
+    
+    footer {
+        font-size: 16px;
+    }
+}
+
+@media(min-width: 1000px) {
+    .main-container {
+        width: 40%;
+    }
+
+    .main-container .publication a {
+        transition: .5s;
+    }
+
+    .main-container .publication a:hover {
+        color: hsl(47, 88%, 63%);
+    }
+}
+
+@media(min-width: 1400px) {
+    .main-container {
+        width: 25%;
+    }
+}
