@@ -63,6 +63,7 @@ body {
 .container .publication p {
     line-height: 24px;
     margin-bottom: 24px;
+    color: hsl(0, 0%, 50%);
 }
 
 .container .user {
@@ -73,6 +74,11 @@ body {
 
 .container .user .avatar {
     width: 40px;
+}
+
+.container .user p {
+    color: hsl(0, 0%, 7%);
+    font-weight: bold;
 }
 
 footer { 
